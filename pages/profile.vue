@@ -1,3 +1,3 @@
 <template>
-    <ChatUsers/>
+    profile
 </template>
