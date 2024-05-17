@@ -2,10 +2,24 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
+
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
+  runtimeConfig: {
+    public: {
+      homeDetails: {
+        userNumber:"",
+        name:"",
+        chatss:"",
+        userPic:"",
+      }
+    }
+  },
+
+
+  modules: ["@nuxt/image",'nuxt-time']
 })

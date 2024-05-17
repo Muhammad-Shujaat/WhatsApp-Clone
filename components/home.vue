@@ -1,4 +1,14 @@
 <template>
-    <div class="w-full text-center bg-[#eae6df] h-[100vh]">home page</div>
+    <div class="" v-if="!RuntimeConfig.public.homeDetails.name">
+        <DefaultChat />
+    </div>
+
+    <div class="w-full text-center bg-[#eae6df] h-[100vh]" v-if="RuntimeConfig.public.homeDetails.name">
+        <OpenChat />
+    </div>
 
 </template>
+<script setup>
+
+const RuntimeConfig = useRuntimeConfig()
+</script>
