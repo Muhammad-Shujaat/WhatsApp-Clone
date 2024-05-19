@@ -3,16 +3,15 @@
         <div class=" flex justify-center items-center w-1/5 h-full p-3">
             <NuxtImg class="rounded-full" :src="`/${img}`" />
         </div>
-        <div class="w-4/5 flex flex-col" @click.prevent="openChat(img, name, last_msg, number)">
-            <div class=" w-full text-start flex justify-between">
-                <span class="">{{ `${name}` }}</span>
-                <span class="text-xs px-2 flex flex-col">
+        <div class="w-full flex justify-between" @click.prevent="openChat(img, name, last_msg, number)">
+            <div class=" w-full text-start flex flex-col justify-between">
+                <span class="text-[1rem] leading-6">{{ `${name}` }}</span>
+                <span class="text-[#3b4a54] text-xs">{{ `${last_msg}` }}</span>
+            </div>
+            <div class="flex flex-col gap-1 items-center">
+                <span class="text-xs text-[#3b4a54] px-2 flex flex-col">
                     {{ time }}
                 </span>
-
-            </div>
-            <div class="w-full text-start flex justify-between">
-                <span class="">{{ `${last_msg}` }}</span>
                 <span class="text-xs px-2 flex flex-col">
                     <span data-icon="down" class="opacity-0 hover:opacity-60"><svg viewBox="0 0 19 20" height="20"
                             width="19" preserveAspectRatio="xMidYMid meet" class="" version="1.1" x="0px" y="0px">

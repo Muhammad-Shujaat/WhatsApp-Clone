@@ -9,6 +9,7 @@
 
 </template>
 <script setup>
+import OpenChat from './openChat.vue';
 
 const RuntimeConfig = useRuntimeConfig()
 </script>
