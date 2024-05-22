@@ -6,10 +6,12 @@
     <div class="w-full text-center bg-[#eae6df] h-[100vh]" v-if="RuntimeConfig.public.homeDetails.name">
         <OpenChat />
     </div>
+    <!-- <div class="">
+        <Emojipicker />
+    </div> -->
 
 </template>
 <script setup>
-import OpenChat from './openChat.vue';
 
 const RuntimeConfig = useRuntimeConfig()
 </script>
